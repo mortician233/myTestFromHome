@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HomeWork05">
+
+    <test name="PositiveTest" allow-return-values="true">
+        <classes>
+            <class name="com.homework.AppTest"/>
+            <parameter name="a" value="1">
+                <parameter name="b" value="1">
+                </parameter>
+            </parameter>
+        </classes>
+    </test>
+
+    <test name="NegativeTest">
+        <classes>
+            <class name="com.homework.AppTest"/>
+            <parameter name="a" value="1">
+                <parameter name="b" value="2">
+                </parameter>
+            </parameter>
+        </classes>
+    </test>
+
+</suite>
