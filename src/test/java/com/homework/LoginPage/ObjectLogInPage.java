@@ -1,13 +1,13 @@
 package com.homework.LoginPage;
 
 
-import com.homework.AbstractPage;
+import com.homework.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ObjectLogInPage extends AbstractPage {
+public class ObjectLogInPage extends PageObject {
 
     LoginData loginData;
 

@@ -1,8 +1,8 @@
 package com.homework.LoginPage;
 
-import com.homework.AbstractPage;
+import com.homework.PageObject;
 
-public class LoginData extends AbstractPage {
+public class LoginData extends PageObject {
     private String login;
     private String password = "khg";
 

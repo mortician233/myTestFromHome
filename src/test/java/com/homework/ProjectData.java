@@ -7,6 +7,7 @@ public class ProjectData {
     public ProjectData(String summary, String descriprion) {
         this.summary = summary;
         this.descriprion = descriprion;
+
     }
 
     public String getSummary() {
