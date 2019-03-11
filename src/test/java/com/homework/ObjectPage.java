@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +13,7 @@ public class ObjectPage {
 
 
     public WebDriver driver = null;
-
+    public Assert asserts = null;
 
     public void getUrl(String Url) {
         driver.navigate().to(Url);
@@ -48,6 +49,10 @@ public class ObjectPage {
     @FindBy(xpath = "//*[@name='category_id']/*[.='someCategory']")
     private WebElement categorySomeCategory;
 
+    @FindBy(className = "login-info-left")
+    private WebElement checkLogIn;
+
+
 
     public void createFieldForm(ProjectData projectData) {
         reportIssue.click();
@@ -61,6 +66,8 @@ public class ObjectPage {
         loginTxt.sendKeys(userData.getLogin());
         passwordTxt.sendKeys(userData.getPassword());
         submite.click();
+        checkLogIn.isEnabled();
+
     }
 
     public void logOut() {
